@@ -1,0 +1,25 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Day & Time</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <main class="clock-card">
+        <p class="tag">YOUR LIVE CLOCK</p>
+        <h1>Day & Time</h1>
+
+        <p id="day">Loading day...</p>
+        <h2 id="time">--:--:--</h2>
+        <p id="date">Loading date...</p>
+
+        <p class="timezone">India Standard Time (IST)</p>
+        <p id="status">Connecting to Python backend...</p>
+    </main>
+</body>
+</html>
